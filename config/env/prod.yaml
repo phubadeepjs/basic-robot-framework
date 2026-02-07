@@ -1,0 +1,4 @@
+config:
+  url: "https://www.facebook.com"
+  browser: "chrome"
+  global_timeout: 10
