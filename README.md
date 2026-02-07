@@ -38,8 +38,6 @@ Edit the files in `config/env/` according to the environment you want to use:
 URL: "https://www.facebook.com"
 BROWSER: "chrome"
 GLOBAL_TIMEOUT: 10
-USERSNAME: "your_username"
-PASSWORD: "your_password"
 ```
 
 ## 🧪 Running Tests
