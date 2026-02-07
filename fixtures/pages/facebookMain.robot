@@ -8,15 +8,19 @@ Open Facebook Main Page
 
 Input Username
     [Arguments]   ${username}
+    Wait Until Element Is Visible   ${facebookMain.usernameTextInput}
     Input Text   ${facebookMain.usernameTextInput}   ${username}
 
 Input Password
     [Arguments]   ${password}
+    Wait Until Element Is Visible   ${facebookMain.passwordTextInput}
     Input Text   ${facebookMain.passwordTextInput}   ${password}
 
 Click Login Button
-    Click Button   ${facebookMain.loginButton}
+    Wait Until Element Is Visible   ${facebookMain.loginButton}
+    Click Element With Retry   ${facebookMain.loginButton}
 
 Verify description
     [Arguments]   ${expectedDescription}
+    Wait Until Element Is Visible   ${facebookMain.description}
     Element Should Contain   ${facebookMain.description}   ${expectedDescription}
