@@ -1,4 +1,4 @@
-# Facebook Robot Framework Test Automation
+# Robot Framework - UI Test Automation
 
 ## 🚀 Installation
 
